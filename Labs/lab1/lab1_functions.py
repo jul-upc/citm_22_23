@@ -1,18 +1,16 @@
 import numpy as np
 from typing import Tuple
 
-def naive_forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray, bool]:
+def naive_forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """
     Forward elimination function wich NOT uses partial pivoting
-    This function should implement partial pivoting
-
-    """
+     """
 
 
     # TODO: your code here!
-    return (np.zeros((1,1)), np.zeros((1,1)), False)
+    return (np.zeros((1,1)), np.zeros((1,1)))
 
-def forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
+def forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray, bool]:
     """
     Optimized forward elimination function wich uses partial pivoting
     forward_elimination(A, b)
@@ -20,7 +18,7 @@ def forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.nd
 
 
     # TODO: your code here!
-    return (np.zeros((1,1)), np.zeros((1,1)))
+    return (np.zeros((1,1)), np.zeros((1,1)), False)
 
 
 def backtracking(At: np.ndarray, bt: np.ndarray) -> np.ndarray:
