@@ -3,7 +3,7 @@ from typing import Tuple
 
 def naive_forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """
-    Forward elimination function wich NOT uses partial pivoting
+    Forward elimination function wich does NOT uses partial pivoting
      """
 
 
@@ -13,7 +13,6 @@ def naive_forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray,
 def forward_elimination(A: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray, bool]:
     """
     Optimized forward elimination function wich uses partial pivoting
-    forward_elimination(A, b)
     """
 
 
